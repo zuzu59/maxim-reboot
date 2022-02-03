@@ -1,7 +1,7 @@
 # maxim-reboot
 Petits scripts qui s'exécutent au poweron/poweroff pour Maxim
 
-zf220202.1739
+zf220203.0739
 
 ## Buts
 Lancer un script au power on et power off de la machine !
@@ -15,6 +15,7 @@ MAIS ATTENTION, le script à l'arrêt ne va PAS fonctionner si on coupe le coura
 
 ## Installation
 ```
+sudo -sE
 cd /root
 git clone https://github.com/zuzu59/maxim-reboot.git
 cd maxim-reboot
@@ -23,6 +24,10 @@ cd maxim-reboot
 
 
 ## Utilisation
+C'est dans deux scripts qu'il faut mettre la *charge* !<br>
+Actuellement ils envoient un 1 ou 0 dans un canal de Thingspeak ;-)
+
+
 ### Script au démarrage
 Le script qui va s'exécuter au démarrage est:
 ```
